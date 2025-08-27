@@ -1,17 +1,17 @@
-# backend/main.py (replace your FAKE_JOBS handler)
 from fastapi import FastAPI, Depends, Query
 from fastapi.middleware.cors import CORSMiddleware
-from sqlalchemy import select
-from typing import Optional, List
 from pydantic import BaseModel
-from db import get_session
-from models import JobPost
-
+from typing import Optional, List
+from sqlalchemy import select, or_
+from .db import get_session
+from .models import JobPost
 
 app = FastAPI()
-app.add_middleware(CORSMiddleware,
+app.add_middleware(
+    CORSMiddleware,
     allow_origins=["http://localhost:3000"],
-    allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
+    allow_credentials=True, allow_methods=["*"], allow_headers=["*"],
+)
 
 class JobOut(BaseModel):
     id: int
@@ -34,8 +34,6 @@ async def list_jobs(
 ):
     stmt = select(JobPost).order_by(JobPost.posted_at.desc().nullslast(), JobPost.id.desc())
     if q:
-        # simple ILIKE search across key fields
-        from sqlalchemy import or_
         ilike = f"%{q}%"
         stmt = stmt.where(or_(JobPost.title.ilike(ilike), JobPost.company.ilike(ilike), JobPost.location.ilike(ilike)))
     if source:
