@@ -1,19 +1,44 @@
 # backend/repo.py
-from sqlalchemy import select
-from .models import JobPost
+from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy import text
+from datetime import datetime
 
-async def upsert_job(session, data: dict):
-    # de-dupe by url if present, else by (title, company, posted_at)
-    if data.get("url"):
-        existing = (await session.execute(select(JobPost).where(JobPost.url == data["url"]))).scalars().first()
-    else:
-        existing = (await session.execute(select(JobPost).where(
-            JobPost.title==data["title"], JobPost.company==data["company"], JobPost.posted_at==data.get("posted_at")
-        ))).scalars().first()
-    if existing:
-        for k,v in data.items():
-            setattr(existing, k, v)
-        return existing
-    obj = JobPost(**data)
-    session.add(obj)
-    return obj
+UPSERT_SQL = text("""
+insert into job_post (hash_key, source, title, company, location,
+                      description_snippet, posted_at, canonical_url, salary_text,
+                      first_seen, last_seen, is_active)
+values
+  (:hash_key, :source, :title, :company, :location,
+   :description_snippet, :posted_at, :canonical_url, :salary_text,
+   now(), now(), true)
+on conflict (hash_key) do update
+set title               = excluded.title,
+    company             = excluded.company,
+    location            = excluded.location,
+    description_snippet = excluded.description_snippet,
+    posted_at           = excluded.posted_at,
+    canonical_url       = excluded.canonical_url,
+    salary_text         = excluded.salary_text,
+    last_seen           = now(),
+    is_active           = true
+""")
+
+async def upsert_jobs(session: AsyncSession, rows: list[dict]):
+    # rows: list of dicts with keys used above (including :hash_key)
+    for r in rows:
+        await session.execute(UPSERT_SQL, r)
+    await session.commit()
+
+async def deactivate_missing_for_source(session: AsyncSession, source: str, crawl_started_at: datetime):
+    # Any active row for this source not touched during this crawl becomes inactive
+    await session.execute(
+        text("""
+            update job_post
+               set is_active = false
+             where source = :source
+               and is_active = true
+               and last_seen < :ts
+        """),
+        {"source": source, "ts": crawl_started_at},
+    )
+    await session.commit()

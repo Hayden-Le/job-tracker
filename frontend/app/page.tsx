@@ -1,86 +1,85 @@
-"use client";
+import { listJobs, getStats } from "@/lib/api";
+import JobList from "@/components/JobList";
+import JobsToolbar from "@/components/JobsToolbar";
+import Link from "next/link";
+import { revalidatePath } from "next/cache";
 
-import { useEffect, useMemo, useState } from "react";
+type SP = { [key: string]: string | string[] | undefined };
 
-type Job = {
-  id: number;
-  title: string;
-  company: string;
-  ingested_at?: string; // ISO string from backend
-};
+export default async function Page({ searchParams }: { searchParams: SP }) {
+  const q       = typeof searchParams.q === "string" ? searchParams.q : undefined;
+  const source  = typeof searchParams.source === "string" ? searchParams.source : undefined;
+  const sort    = (typeof searchParams.sort === "string" ? searchParams.sort : "posted_at_desc") as "posted_at_desc" | "posted_at_asc";
+  const pageStr = typeof searchParams.page === "string" ? searchParams.page : "1";
+  const limitStr= typeof searchParams.limit === "string" ? searchParams.limit : "10";
 
-export default function HomePage() {
-  const [jobs, setJobs] = useState<Job[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const page  = Math.max(1, parseInt(pageStr || "1", 10));
+  const limit = Math.min(100, Math.max(1, parseInt(limitStr || "10", 10)));
 
-  // read once on mount (safe on client)
-  const lastSeenIso = useMemo(
-    () => (typeof window !== "undefined" ? window.localStorage.getItem("lastSeen") : null),
-    []
-  );
-  const lastSeenDate = lastSeenIso ? new Date(lastSeenIso) : null;
+  const [jobs, stats] = await Promise.all([
+  listJobs({ q, source, sort, page, limit }),
+  getStats()
+  ]);
 
-  useEffect(() => {
-    const controller = new AbortController();
-    const BASE = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";
-    const url = new URL(`${BASE}/jobs`);
-    url.searchParams.set("limit", "20");
-    url.searchParams.set("offset", "0");
+  // server action to refresh after create
+  async function refresh() {
+    "use server";
+    revalidatePath("/");
+  }
 
-    (async () => {
-      try {
-        setLoading(true);
-        const res = await fetch(url.toString(), { signal: controller.signal, cache: "no-store" });
-        if (!res.ok) {
-          const text = await res.text();
-          throw new Error(`GET /jobs failed: ${res.status} ${text}`);
-        }
-        const data = (await res.json()) as Job[];
-        setJobs(data);
-        setError(null);
-      } catch (e: any) {
-        if (e.name !== "AbortError") setError(e.message ?? "Failed to fetch jobs");
-      } finally {
-        setLoading(false);
-      }
-    })();
+  // --- pagination helpers (simple page-based) ---
+  const hasPrev = page > 1;
+  const hasNext = jobs.length === limit;
 
-    // on unmount, record lastSeen
-    return () => {
-      if (typeof window !== "undefined") {
-        window.localStorage.setItem("lastSeen", new Date().toISOString());
-      }
-      controller.abort();
-    };
-  }, []);
+  function buildHref(nextPage: number) {
+    const sp = new URLSearchParams();
+    if (q) sp.set("q", q);
+    if (source) sp.set("source", source);
+    if (sort) sp.set("sort", sort);
+    sp.set("page", String(nextPage));
+    sp.set("limit", String(limit));
+    return `/?${sp.toString()}`;
+  }
 
   return (
-    <main style={{ padding: "2rem", maxWidth: 720 }}>
-      <h1 style={{ marginBottom: "1rem" }}>Job Tracker</h1>
+    <div className="grid gap-6">
+      <JobsToolbar
+        initialQ={q || ""}
+        initialSource={source || ""}
+        initialSort={sort}
+        limit={limit}
+      />
 
-      {loading && <p>Loading jobs…</p>}
-      {error && (
-        <p style={{ color: "crimson" }}>
-          {error} — check <code>NEXT_PUBLIC_API_URL</code> and backend CORS.
-        </p>
-      )}
+      <div className="rounded-lg border bg-white p-3 text-sm text-slate-700">
+        <div>Active jobs: <b>{stats.total_active}</b></div>
+        <div className="mt-1 flex gap-4 flex-wrap">
+          {stats.per_source.map(s => (
+            <span key={s.source}>
+              {s.source ?? "(unknown)"}: {s.active_count} • last: {s.last_seen ? new Date(s.last_seen).toLocaleString() : "—"}
+            </span>
+          ))}
+        </div>
+      </div>
 
-      <ul style={{ lineHeight: 1.8 }}>
-        {jobs.map((job) => {
-          const isNew =
-            lastSeenDate &&
-            job.ingested_at &&
-            !Number.isNaN(new Date(job.ingested_at).getTime()) &&
-            new Date(job.ingested_at).getTime() > lastSeenDate.getTime();
+      <JobList jobs={jobs} />
 
-          return (
-            <li key={job.id} style={{ fontWeight: isNew ? 700 : 400 }}>
-              {job.title} @ {job.company} {isNew ? "• NEW" : ""}
-            </li>
-          );
-        })}
-      </ul>
-    </main>
+      <div className="flex items-center justify-between">
+        <div className="text-sm text-slate-500">
+          Page {page}{hasNext ? "" : " (last page)"}
+        </div>
+        <div className="flex gap-2">
+          {hasPrev && (
+            <Link href={buildHref(page - 1)} className="rounded border bg-white px-3 py-1.5 text-sm">
+              ← Prev
+            </Link>
+          )}
+          {hasNext && (
+            <Link href={buildHref(page + 1)} className="rounded border bg-white px-3 py-1.5 text-sm">
+              Next →
+            </Link>
+          )}
+        </div>
+      </div>
+    </div>
   );
 }
