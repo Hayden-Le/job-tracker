@@ -1,0 +1,27 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Application Development: Design, develop, test, and deploy scalable applications using C# and .NET (Core/Framework)",
+      "API Development: Implement, maintain, and optimize APIs and web applications using ASP.NET and MVC",
+      "Cloud Integration: Work with AWS services such as EC2, S3, and RDS to build scalable and secure solutions",
+      "Database Development: Design and maintain schemas, queries, and stored procedures using SQL",
+      "Code Quality: Apply object-oriented principles and design patterns, perform code reviews, and follow software development best practices",
+      "Troubleshooting: Debug, troubleshoot, and upgrade existing applications to improve performance and reliability",
+      "Collaboration: Work with cross-functional teams to understand business requirements and deliver effective solutions",
+      "Continuous Improvement: Stay updated with emerging technologies and contribute to knowledge sharing within the team"
+    ],
+    "Requirements": [
+      "Bachelor’s degree in Computer Science, Information Technology, or related field",
+      "7+ years of proven experience as a .NET / C# Developer",
+      "Strong knowledge of .NET Framework / .NET Core, C#, and OOP concepts",
+      "Hands-on experience with ASP.NET, MVC, and API development",
+      "Experience with AWS (EC2, S3, RDS)",
+      "Proficiency in SQL and database design",
+      "Strong understanding of software development best practices and design patterns",
+      "Detail-oriented with a passion for delivering high-quality, efficient software solutions",
+      "Excellent communication and teamwork skills"
+    ],
+    "NiceToHaves": ["No information provided"],
+    "Benefits": ["Trident Consulting is an award-winning IT/engineering staffing company with recent awards including: 2022, 2021, 2020 – Inc. 5000 fastest-growing private companies in America, 2022, 2021 – SF Business Times 100 fastest-growing private companies in Bay Area"]
+  }
+}

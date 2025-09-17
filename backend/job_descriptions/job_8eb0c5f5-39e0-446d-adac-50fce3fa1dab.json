@@ -1,0 +1,32 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Design, develop, and optimize high-performance backend systems using Java (Spring Boot/Java 8+) and Apache Spark.",
+      "Build and maintain ETL pipelines and distributed data processing workflows.",
+      "Work with large-scale datasets for ingestion, transformation, and analytics.",
+      "Collaborate with data engineers, architects, and product teams to deliver scalable solutions.",
+      "Ensure application performance, scalability, reliability, and security in production environments.",
+      "Write clean, reusable, well-documented code and participate in peer code reviews.",
+      "Troubleshoot production issues, optimize Spark jobs, and fine-tune cluster performance.",
+      "Work in Agile/Scrum environments, delivering incremental business value."
+    ],
+    "Requirements": [
+      "7+ years of professional software development experience.",
+      "Strong hands-on expertise with Java 8+ (OOP, multithreading, collections, concurrency).",
+      "Solid experience in Apache Spark (Core, SQL, Streaming).",
+      "Experience with Spring Boot / Microservices architecture.",
+      "Strong background in ETL pipelines, big data processing, and distributed systems.",
+      "Database expertise (SQL – PostgreSQL, Oracle, MySQL; and NoSQL – MongoDB, Cassandra).",
+      "Proficiency with RESTful APIs and integration patterns.",
+      "Experience with Git/GitHub/Bitbucket and CI/CD pipelines."
+    ],
+    "NiceToHaves": [
+      "Experience with Cloud platforms (AWS EMR, GCP Dataproc, or Azure HDInsight).",
+      "Knowledge of Kafka/RabbitMQ for real-time streaming.",
+      "Familiarity with Hadoop ecosystem (Hive, HDFS, Yarn).",
+      "Containerization & orchestration (Docker, Kubernetes).",
+      "Performance tuning of Spark clusters (executors, partitions, caching strategies)."
+    ],
+    "Benefits": ["No information provided."]
+  }
+}

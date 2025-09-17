@@ -1,0 +1,41 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Lead a distributed team by conducting regular 1:1s across time zones from the U.S. West Coast to Germany, providing feedback, mentorship, and career growth opportunities, and fostering a healthy, inclusive, high-performing culture.",
+      "Partner with engineering, product management, and design to align on priorities, requirements, and customer needs for GitHub’s mobile experiences.",
+      "Coach the team to improve processes, architecture, and delivery practices through both real-time collaboration and asynchronous tools (GitHub Issues, PRs, Discussions, Projects).",
+      "Ensure the team consistently delivers well-designed systems, reliable code, and high-quality user experiences.",
+      "Coach others to understand the customer need via data interpretation (e.g., metrics, bugs, customer feedback), identify problems and/or trends for resolution, and other actionable metrics of value.",
+      "Guide the team to iteratively ship features and bug fixes that balance speed, quality, and long-term velocity.",
+      "Solve complex challenges by providing creative solutions that advance the team’s goals and improve resilience.",
+      "Drive innovation by encouraging exploration of new tools, methodologies, and approaches that enhance mobile delivery.",
+      "Facilitate inclusive discussions so diverse perspectives are heard in technical and product decision-making.",
+      "Communicate progress, findings, risks, team health, and customer impact clearly to stakeholders and leadership.",
+      "Recruit, onboard, and develop top engineering talent, fostering a culture of innovation, continuous learning, and sustainable practices."
+    ],
+    "Requirements": [
+      "6+ years experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, Go, Ruby, Rust, or Python",
+      "OR Associate’s Degree in Computer Science, Electrical Engineering, Electronics Engineering, Math, Physics, Computer Engineering, Computer Science, or related field AND 5+ years experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, Go, Ruby, Rust, or Python",
+      "OR Bachelor's Degree in Computer Science, Electrical Engineering, Electronics Engineering, Math, Physics, Computer Engineering, Computer Science, or related field AND 4+ years experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, Go, Ruby, Rust, or Python",
+      "OR Master's Degree in Computer Science, Electrical Engineering, Electronics Engineering, Math, Physics, Computer Engineering, Computer Science, or related field AND 2+ years experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, Go, Ruby, Rust, or Python",
+      "OR Doctorate in Computer Science, Electrical Engineering, Electronics Engineering, Math, Physics, Computer Engineering, Computer Science, or related field",
+      "OR equivalent experience.",
+      "1+ year(s) direct and/or indirect people management or leadership experience."
+    ],
+    "NiceToHaves": [
+      "Experience leading mobile engineering teams or working with mobile platforms (iOS and/or Android).",
+      "Demonstrated ability to build collaborative partnerships across engineering, product, and design.",
+      "Strong people management experience, with a proven ability to lead engineering teams while building inclusive, high-performing cultures and fostering effective, sustainable engineering practices.",
+      "Demonstrated success coaching and developing engineers to achieve their full potential.",
+      "High emotional intelligence and empathy, with the ability to address interpersonal issues constructively and promote team health.",
+      "Strong project leadership skills: balancing priorities, managing dependencies, and ensuring successful delivery of complex initiatives.",
+      "Excellent written and verbal communication skills, with the ability to thrive in a distributed, remote-first environment and communicate effectively with both peers and leadership."
+    ],
+    "Benefits": [
+      "Compensation Range: The base salary range for this job is USD $112,800.00 - USD $299,300.00 /Yr.",
+      "GitHub values: Customer-obsessed, Ship to learn, Growth mindset, Own the outcome, Better together, Diverse and inclusive",
+      "Manager fundamentals: Model, Coach, Care",
+      "Leadership principles: Create clarity, Generate energy, Deliver success"
+    ]
+  }
+}

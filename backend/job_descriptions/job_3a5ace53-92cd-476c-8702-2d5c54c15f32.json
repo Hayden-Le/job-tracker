@@ -1,0 +1,34 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Implement and maintain applications across our stack.",
+      "Write high-quality code with best practices and design patterns in mind and engage in code review/quality assurance.",
+      "Engage with your fellow engineers and bring new ideas to create/maintain a dynamic and scalable architecture.",
+      "Understand our cloud infrastructure, AWS, experiment and implement how it supports our implementations.",
+      "This role requires limited on-call hours."
+    ],
+    "Requirements": [
+      "Bachelor’s degree in computer science, equivalent field, or equivalent experience.",
+      "A minimum of 5 years of experience working as a software engineer",
+      "A minimum of 5 years of experience in Python.",
+      "JavaScript & TypeScript with libraries: React and frameworks: NextJS.",
+      "Strong experience in command line (Unix & Linux) navigation and revision tracking (Git)",
+      "Experience w/ DevOps technologies such as Docker and Jenkins.",
+      "Experience with Amazon Web Services (AWS) such as S3, EC2, ELB, SES, and CloudWatch"
+    ],
+    "NiceToHaves": ["No information provided."],
+    "Benefits": [
+      "Competitive medical, dental and vision coverage",
+      "Company-paid pension and 401(k) match",
+      "Three weeks of vacation and up to three weeks of paid sick leave",
+      "Nine paid holidays and two personal days",
+      "20 weeks paid parental leave for any new parent",
+      "Robust mental health resources",
+      "Backup care and caregiver concierge services",
+      "Gender affirming services",
+      "Pet insurance",
+      "Free Post digital subscription",
+      "Leadership and career development programs"
+    ]
+  }
+}

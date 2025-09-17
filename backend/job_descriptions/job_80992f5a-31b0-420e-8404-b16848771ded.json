@@ -1,0 +1,27 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Collaborate with Agile teams to design, develop, test, implement, and support technical solutions",
+      "Share passion for staying on top of tech trends, experimenting with new technologies, participating in internal and external technology communities, mentoring other members of the engineering community",
+      "Work with digital product managers and deliver robust cloud-based solutions that drive powerful experiences",
+      "Utilize programming languages like Java, Python, SQL, Node, Go, and Scala, Open Source RDBMS and NoSQL databases, Container Orchestration services including Docker and Kubernetes, and a variety of AWS tools and services"
+    ],
+    "Requirements": [
+      "Bachelor’s Degree",
+      "At least 3 years of experience in software engineering"
+    ],
+    "NiceToHaves": [
+      "Master's Degree",
+      "2+ years of experience in Agile practices",
+      "1+ years of experience with AWS, GCP, Microsoft Azure, or another cloud service",
+      "4+ years of experience in at least one of the following: Java, Scala, Python, Go, Javascript/TypeScript, Angular/React.js, or Node.js",
+      "2+ years of experience working with big data technologies (e.g. Hadoop, Spark, Presto)",
+      "2+ years of experience working on streaming data applications (e.g. Kafka, Kinesis, Flink, or Spark Streaming)",
+      "4+ years of experience in open source frameworks"
+    ],
+    "Benefits": [
+      "Comprehensive, competitive, and inclusive set of health, financial, and other benefits",
+      "Performance based incentive compensation (may include cash bonus(es) and/or long term incentives)"
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+ {
+"description_sections": {
+  "Responsibilities": [
+    "Develop C# ASP web applications using Windows, Visual Studio, and SQL-Oracle or EF/Linq",
+    "Utilize ASP.net with AJAX experience to build robust and scalable web applications",
+    "Maintain and update existing code to ensure ease of maintenance and documentation",
+    "Collaborate with the team to identify and prioritize project requirements"
+  ],
+  "Requirements": [
+    "Bachelor's degree in Computer Science or related field (Comparable experience may be considered)",
+    "At least 5 years of experience in C# and ASP development",
+    "Proficiency in Visual Studio development",
+    "Strong understanding of SQL-Oracle or EF/Linq",
+    "Experience with ASP.net and AJAX development",
+    "Excellent documentation and code maintenance skills"
+  ],
+  "NiceToHaves": ["No information provided"],
+  "Benefits": [
+    "Competitive salary commensurate with experience",
+    "Options for Corp 2 Corp, 1099, or W2 employment",
+    "US citizens or Green Card holders with at least 5 years of US history are encouraged to apply"
+  ]
+}
+}

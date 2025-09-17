@@ -1,0 +1,39 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Design, develop, and maintain high-quality Spring Boot applications and services.",
+      "Build and deploy applications in AWS environments leveraging Kubernetes, Minikube, and containerization technologies.",
+      "Develop and manage microservices architecture with Docker, Consul, Swagger, and API gateways.",
+      "Build responsive, user-friendly interfaces using React.js and modern frontend practices.",
+      "Develop backend services and APIs leveraging Java (Spring Boot) as well as Node.js where appropriate.",
+      "Integrate with relational and NoSQL databases (MySQL, Oracle, SQL, PL/SQL, MongoDB) and optimize queries for performance.",
+      "Ensure code quality through best practices, automated testing, and code reviews.",
+      "Collaborate with cross-functional teams in an Agile environment to deliver features iteratively.",
+      "Prepare and maintain technical documentation to support ongoing development and maintenance.",
+      "Contribute to architectural decisions that impact scalability, security, and performance."
+    ],
+    "Requirements": [
+      "Bachelor’s Degree in Computer Science, Engineering, Information Technology or relevant field and 7+ years of experience in Java/J2EE development and design.",
+      "Strong expertise with Spring Boot and RESTful Web Services.",
+      "Proficiency with React.js for frontend development.",
+      "Hands-on experience with Node.js for backend development.",
+      "Experience deploying and managing applications in AWS cloud environments.",
+      "Proficiency with containerization (Docker) and orchestration (Kubernetes/Minikube).",
+      "Strong database knowledge, including both relational (MySQL, Oracle, SQL, PL/SQL) and NoSQL (MongoDB).",
+      "Strong understanding of the Software Development Lifecycle (SDLC) and Agile methodologies (Scrum, Kanban).",
+      "Excellent communication, collaboration, and problem-solving skills."
+    ],
+    "NiceToHaves": [
+      "Experience with CI/CD pipelines and DevOps practices.",
+      "Knowledge of microservices architecture and event-driven design.",
+      "Exposure to serverless architectures in AWS (e.g., Lambda, API Gateway).",
+      "Experience with other cloud platforms (Azure, GCP) is a strong plus."
+    ],
+    "Benefits": [
+      "The Opportunity to support high-visibility federal missions",
+      "A culture that values innovation, growth, and collaboration",
+      "Access to cutting-edge tools and technologies",
+      "A career path that rewards ambition and performance"
+    ]
+  }
+}

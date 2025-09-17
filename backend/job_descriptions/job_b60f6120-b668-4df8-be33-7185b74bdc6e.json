@@ -1,0 +1,31 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Collaborate with Agile teams to design, develop, test, implement, and support technical solutions",
+      "Work with a team of developers on machine learning, distributed microservices, and full stack systems",
+      "Utilize programming languages like Java, Scala, Python and Open Source RDBMS and NoSQL databases and Cloud based data warehousing services",
+      "Share passion for staying on top of tech trends, experimenting with new technologies, participating in internal & external technology communities, and mentoring other members of the engineering community",
+      "Collaborate with digital product managers and deliver robust cloud-based solutions",
+      "Perform unit tests and conduct code reviews"
+    ],
+    "Requirements": [
+      "Bachelor's Degree",
+      "At least 3 years of experience in application development",
+      "At least 1 year of experience in big data technologies"
+    ],
+    "NiceToHaves": [
+      "5+ years of experience in application development including Python, SQL, Scala, or Java",
+      "2+ years of experience with a public cloud (AWS, Microsoft Azure, Google Cloud)",
+      "3+ years experience with Distributed data/computing tools",
+      "2+ year experience working on Real Time data and streaming applications",
+      "2+ years of experience with NoSQL implementation",
+      "2+ years of data warehousing experience (Redshift or Snowflake)",
+      "3+ years of experience with UNIX/Linux including basic commands and Shell Scripting",
+      "2+ years of experience with Agile engineering practices"
+    ],
+    "Benefits": [
+      "Comprehensive, competitive, and inclusive set of health, financial, and other benefits",
+      "Eligibility for performance based incentive compensation (cash bonus(es) and/or long term incentives)"
+    ]
+  }
+}

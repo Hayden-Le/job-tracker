@@ -19,6 +19,7 @@ export type JobPost = {
   posted_at: string;
   canonical_url: string | null;
   salary_text: string | null;
+  description_sections?: Record<string, string[] | string>;
 };
 
 const API = process.env.NEXT_PUBLIC_API_URL ?? "http://localhost:8000";

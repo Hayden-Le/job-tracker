@@ -3,6 +3,8 @@ import JobList from "@/components/JobList";
 import JobsToolbar from "@/components/JobsToolbar";
 import Link from "next/link";
 import { revalidatePath } from "next/cache";
+import dynamic from "next/dynamic";
+const UploadCV = dynamic(() => import("./upload-cv"), { ssr: false });
 
 type SP = { [key: string]: string | string[] | undefined };
 
@@ -49,7 +51,6 @@ export default async function Page({ searchParams }: { searchParams: SP }) {
         initialSort={sort}
         limit={limit}
       />
-
       <div className="rounded-lg border bg-white p-3 text-sm text-slate-700">
         <div>Active jobs: <b>{stats.total_active}</b></div>
         <div className="mt-1 flex gap-4 flex-wrap">
@@ -60,9 +61,7 @@ export default async function Page({ searchParams }: { searchParams: SP }) {
           ))}
         </div>
       </div>
-
       <JobList jobs={jobs} />
-
       <div className="flex items-center justify-between">
         <div className="text-sm text-slate-500">
           Page {page}{hasNext ? "" : " (last page)"}

@@ -1,8 +1,8 @@
 # backend/models.py
 import uuid
 from sqlalchemy import Column, String, Text, TIMESTAMP, Boolean, func
-from sqlalchemy.dialects.postgresql import UUID
-from .db import Base
+from sqlalchemy.dialects.postgresql import UUID, JSONB
+from backend.db import Base
 
 class JobPost(Base):
     __tablename__ = "job_post"
@@ -13,6 +13,7 @@ class JobPost(Base):
     company = Column(Text, nullable=True)
     location = Column(Text, nullable=True)
     description_snippet = Column(Text, nullable=True)
+    description_sections = Column(JSONB, nullable=True)
     posted_at = Column(TIMESTAMP(timezone=True), nullable=True)
     canonical_url = Column(Text, nullable=True)
     salary_text = Column(Text, nullable=True)

@@ -1,0 +1,28 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Design, develop and support a custom-built AWS native data platform.",
+      "Collaborate with other areas of the team to understand their infrastructure needs and enhance the system to support them.",
+      "Design and develop new code, review existing code changes, and implement automated tests.",
+      "Actively seek opportunities to continuously improve the technical quality and architecture to improve the product’s business value.",
+      "Improve the product’s test automation and deployment practices to enable the team to deliver features more efficiently.",
+      "Operate the product in production including release management and production support."
+    ],
+    "Requirements": [
+      "At least 5 years of experience developing production software",
+      "Strong Python skills with at least two years of experience writing production code",
+      "At least two years of experience with Linux administration and scripting",
+      "At least one year of experience with Amazon Web Services as a developer and administrator",
+      "Experience with containerization technologies (Docker) and orchestration tools (Kubernetes)",
+      "BS in Computer Science or equivalent experience",
+      "Experience writing automated unit, integration, regression, performance and acceptance tests"
+    ],
+    "NiceToHaves": [
+      "Solid understanding of software design principles"
+    ],
+    "Benefits": [
+      "Freddie Mac offers a comprehensive total rewards package to include competitive compensation and market-leading benefit programs.",
+      "This position has an annualized market-based salary range of $130,000 - $196,000 and is eligible to participate in the annual incentive program."
+    ]
+  }
+}

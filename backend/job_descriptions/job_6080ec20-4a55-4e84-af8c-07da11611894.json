@@ -1,0 +1,41 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Works within an agile (Scrum) team to advance the state of the application.",
+      "Must have excellent customer communication skills.",
+      "Interfaces with customer to determine and document application requirements.",
+      "Coordinates with other functional members of the project team.",
+      "Performs specialized programming duties including conceptual system design, specifications development, writing interfaces to Database Management Systems (DBMS).",
+      "Translates detailed design into computer software.",
+      "Tests, debugs, and refines the computer software to produce the required product.",
+      "Ensures that software design promotes modularity and portability and is reliable, serviceable, and maintainable, has demonstrable accuracy, privacy and security, and is sufficient within the parameters of the system.",
+      "Prepares required system and data requirements documentation.",
+      "Designs and develops Intranet-based interactive applications."
+    ],
+    "Requirements": [
+      "10+ year's experience in the Information Technology industry.",
+      "10+ year's experience as an application developer.",
+      "10+ year's experience in Java-based Object-Oriented Development (OOD).",
+      "Bachelor's Degree in related field - Computer Science, Engineering, or Math is preferred.",
+      "Hands-on Experience with most of the following technologies and frameworks are a must: Hibernate/JPA, PostgreSQL, Maven, JSON, XML, CDI, other open source tools and frameworks. Quarkus is a plus.",
+      "Knowledge of Linux/UNIX environment is a must.",
+      "Knowledge and experience developing web front ends, including with Angular, JavaScript, JQuery, and BootStrap. Internationalization experience is a plus.",
+      "Knowledge and experience in developing web services, particularly RESTFul.",
+      "Knowledge and experience with cloud computing platforms, including EC2 or Azure",
+      "Knowledge and experience with containerization, including Docker or Kubernetes is a plus",
+      "Knowledge and experience with Kafka is a plus.",
+      "Strong math skills a plus.",
+      "Experience in GIS/Spacial environment is a plus."
+    ],
+    "NiceToHaves": [
+      "Computer Skills: Working knowledge of Geographical System (GIS) software a plus: Geotools, PostGIS and/or Oracle spatial preferred.",
+      "Experience with web-enabling technologies to enhance input to an output from geographical displays is a plus.",
+      "Shell scripting",
+      "Internationalization experience"
+    ],
+    "Benefits": [
+      "CGH offers a comprehensive benefits package to include medical, dental, vision, short- and long-term disability insurance, life insurance, commuter benefit, and flexible spending account.",
+      "Other benefits include 401K, paid holidays, and Paid Time Off (PTO)."
+    ]
+  }
+}

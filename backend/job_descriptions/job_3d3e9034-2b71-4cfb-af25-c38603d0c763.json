@@ -1,0 +1,35 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Own the CI/CD process for Altinity Stable Builds, delivering reliable, production-grade ClickHouse releases",
+      "Work on CI/CD and automation code in Altinity’s ClickHouse fork and upstream ClickHouse",
+      "Maintain and improve GitHub self-hosted runners and supporting infrastructure",
+      "Build, sign, and publish .deb, .rpm, and Docker images to internal and public registries",
+      "Collaborate with ClickHouse development and QA teams to ship high-quality builds and features",
+      "Investigate and resolve CI/CD failures, flaky tests, and build regressions",
+      "Design automation to make release workflows more reliable, repeatable, and self-healing",
+      "Proactively monitor infrastructure and pipelines to ensure 24/7 availability"
+    ],
+    "Requirements": [
+      "Excellent knowledge of cloud infrastructure management: AWS is required; familiarity with GCP and Azure is a plus.",
+      "Excellent Python programming, Bash scripting, and Linux system administration skills",
+      "Deep familiarity with git and modern build systems like CMake and Ninja",
+      "Strong experience building and debugging CI/CD workflows using GitHub Actions",
+      "Hands-on expertise in creating and publishing .deb, .rpm, and Docker images",
+      "Solid understanding of containers and virtualization technologies"
+    ],
+    "NiceToHaves": [
+      "Experience with ClickHouse",
+      "Experience with C++",
+      "Experience with open-source projects"
+    ],
+    "Benefits": [
+      "Work from Anywhere, Anytime: We are not your typical nine-to-five shop! Enjoy the flexibility of working from literally wherever and whenever.",
+      "Cultural Diversity: We love that we get to work with passionate people from around the world.",
+      "Career Development and Learning Culture: We provide opportunities to learn new technologies as well as try out new roles; opportunities to learn ClickHouse deeply, contribute to open source, and grow into senior or platform roles.",
+      "Technical Depth: Be part of a team that’s building the infrastructure for real-time analytics at a global scale. Grow your skills in Kubernetes, distributed databases, observability, and automation.",
+      "USA Employees Benefits: We offer comprehensive PPO health care plans for our US-based employees that are incredibly flexible to meet the needs of individuals or families. 401K with company match also available.",
+      "Company Travel: We come together in person two to three times per year in locations across the globe. During non-pandemic times, of course! We also fund travel to conferences and encourage presentations as well as contributions to open source communities."
+    ]
+  }
+}

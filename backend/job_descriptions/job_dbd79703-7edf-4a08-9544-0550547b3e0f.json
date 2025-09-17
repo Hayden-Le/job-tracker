@@ -1,0 +1,31 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Design and implement a large-scale ingest system in a big data environment.",
+      "Analyze and design the best possible ELT processes to support enterprise data objectives.",
+      "Recommend methodologies to optimize visualization, organization, storage, and availability of large-scale data.",
+      "Participate in software programming initiatives using HTML, CSS, JavaScript, Java, Python, SpringBoot, and Hibernate.",
+      "Develop and direct software system validation and testing methods using Junit and Katalon.",
+      "Support the Agile software development lifecycle following Program SAFe practices",
+      "Leverage Atlassian tool suite like JIRA and Confluence to track activities"
+    ],
+    "Requirements": [
+      "Demonstrated experience performing ETL activities, including parser development, data flow management, data lifecycle policy implementation, and data model development.",
+      "Experience with data modeling and relational databases such as PostgreSQL.",
+      "Extensive experience using Java for data processing, manipulation, or querying (SQL or NoSQL).",
+      "ETL/Data Integration experience using Spring, NiFi, Kafka, and Elasticsearch.",
+      "Experience with development in Commercial Cloud Platforms (e.g., AWS, Google Cloud, Azure).",
+      "Bachelor's with 8+ years of relevant experience or a Master's with 6+ years of relevant experience. Additional years of experience may be substituted in lieu of a degree.",
+      "TS/SCI with a polygraph is required for consideration."
+    ],
+    "NiceToHaves": [
+      "Experience working on the customer's systems.",
+      "Understanding of the customer's system development policies.",
+      "Additional certifications related to ETL and data integration tools.",
+      "Extensive experience with NiFi and Elasticsearch."
+    ],
+    "Benefits": [
+      "Competitive benefits, including Paid Time Off, 11 paid Holidays, 401K with a 6% company match and immediate vesting, Flexible Schedules, Discounted Stock Purchase Plans, Technical Upskilling, Education and Training Support, Parental Paid Leave, and much more."
+    ]
+  }
+}

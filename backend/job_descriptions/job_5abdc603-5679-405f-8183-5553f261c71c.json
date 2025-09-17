@@ -1,0 +1,30 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Design, code, test, and debug enterprise Java applications.",
+      "Follow industry best practices and internal standards for software development and documentation.",
+      "Contribute to software design discussions and code reviews.",
+      "Develop web-based applications using Java EE technologies, integrating with RDBMS systems.",
+      "Collaborate with business users and IT departments to ensure functionality meets expectations.",
+      "Support legacy system migration, feature enhancement, and new development."
+    ],
+    "Requirements": [
+      "6+ years of experience with Java EE, EJB, Hibernate, JMS, JSF, and JBoss.",
+      "4+ years working with Oracle 10g+ and other RDBMS platforms.",
+      "4+ years in application development, object-oriented design, and web services."
+    ],
+    "NiceToHaves": [
+      "Experience in PL/SQL, scripting, and Oracle Access Manager.",
+      "Understanding of high-availability systems and configuration management.",
+      "Knowledge of SOA patterns and enterprise integration."
+    ],
+    "Benefits": [
+      "401(k)",
+      "Dental insurance",
+      "Health insurance",
+      "Paid time off",
+      "Professional development assistance",
+      "Vision insurance"
+    ]
+  }
+}

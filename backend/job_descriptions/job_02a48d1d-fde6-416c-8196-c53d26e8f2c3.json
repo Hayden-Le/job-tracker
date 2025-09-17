@@ -1,0 +1,31 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Identify and lead scalable support initiatives",
+      "Act as Directly Responsible Individual (DRI) for one or more EPD triage areas",
+      "Surface platform/product issues using synthesized insights from GitHub issues, discussions, and support data",
+      "Collaborate with Customer Success to assess release impacts on support volume and efficiency",
+      "Deliver customer support via ticketing systems and live Zoom sessions",
+      "Mentor Support Engineers on ticket handling, troubleshooting, and GitHub workflows"
+    ],
+    "Requirements": [
+      "7+ years' experience in technical customer support, technical writing, system administration, or related roles",
+      "OR bachelor's degree in computer science or related field AND 5+ years' experience in technical customer support, technical writing, system administration, or related roles",
+      "OR equivalent experience"
+    ],
+    "NiceToHaves": [
+      "Strong preference to be located in and working within Pacific Time Zone to support global customers",
+      "Expert-level proficiency in Git and GitHub",
+      "Experience supporting large, complex customer environments in a technical capacity with incident management or escalation processes",
+      "Familiarity with production-level virtualization platforms and/or cloud providers",
+      "Ability to read, understand, and update code/scripts in Shell, Ruby, Go, or similar languages",
+      "Understanding of common components in the web application stack"
+    ],
+    "Benefits": [
+      "Compensation Range: The base salary range for this job is USD $46.35 - USD $122.94 /Hr.",
+      "GitHub values: Customer-obsessed, Ship to learn, Growth mindset, Own the outcome, Better together, Diverse and inclusive",
+      "Manager fundamentals: Model, Coach, Care",
+      "Leadership principles: Create clarity, Generate energy, Deliver success"
+    ]
+  }
+}

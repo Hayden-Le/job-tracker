@@ -1,0 +1,17 @@
+ {
+  "description_sections": {
+    "Responsibilities": ["No information provided."],
+    "Requirements": [
+      "Experience in Java development (JDK 8+)",
+      "Proficient with Spring Boot, Spring Security, and Hibernate/JPA",
+      "Experience building or consuming REST APIs using JSON or SOAP",
+      "Comfortable working hybrid in Arlington, VA (2 days onsite)"
+    ],
+    "NiceToHaves": ["No information provided."],
+    "Benefits": [
+      "401(k) matching",
+      "Health insurance",
+      "Paid time off"
+    ]
+  }
+}

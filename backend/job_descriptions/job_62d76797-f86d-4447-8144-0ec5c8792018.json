@@ -1,0 +1,33 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Design and develop robust, scalable web applications using .NET8 framework.",
+      "Develop intuitive and visually appealing user interfaces using Blazor.",
+      "Design and manage SQL Server databases, ensuring data integrity and performance.",
+      "Deploy applications and provide post-deployment support.",
+      "Collaborate with cross-functional teams to define, design, and ship new features.",
+      "Troubleshoot and resolve application issues and bugs in a timely manner.",
+      "Participate in code reviews to maintain code quality and share knowledge with the team."
+    ],
+    "Requirements": [
+      "Bachelor’s degree in Computer Science, Information Technology, or a related field.",
+      "8+ years of professional experience in software development.",
+      "Proficiency in C# programming language, .NET framework, and SQL Server.",
+      "Strong knowledge of HTML and CSS.",
+      "Experience with version control systems such as Git.",
+      "Clearance Requirements: Active Secret clearance required to start"
+    ],
+    "NiceToHaves": [
+      "Experience with Blazor for web application development is highly desirable.",
+      "Proficiency with .NET framework and SQL Server is essential, along with a solid understanding of HTML/CSS.",
+      "Strong problem-solving skills and attention to detail.",
+      "Excellent communication and collaboration abilities.",
+      "Commitment to continuous learning and professional development."
+    ],
+    "Benefits": [
+      "While subject to change based on business needs, Leidos reasonably anticipates that this job requisition will remain open for at least 3 days with an anticipated close date of no earlier than 3 days after the original posting date as listed above.",
+      "Pay Range: Pay Range $101,400.00 - $183,300.00",
+      "The Leidos pay range for this job level is a general guideline only and not a guarantee of compensation or salary."
+    ]
+  }
+}

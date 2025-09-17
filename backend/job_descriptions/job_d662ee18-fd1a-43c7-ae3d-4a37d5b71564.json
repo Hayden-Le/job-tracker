@@ -1,0 +1,33 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Migrate legacy applications to Python",
+      "Analyze legacy applications code and learn the legacy applications functionalities",
+      "Maintain existing applications, and provide support to users",
+      "Design new applications independently and/or work with architects",
+      "Provide vision for new applications from functionalities, to front end UI design",
+      "Interact with end users, and Government Lead, managers to understand new application requirements and support needs",
+      "Reverse engineer the legacy application if necessary",
+      "Use customers systems to maintain code"
+    ],
+    "Requirements": [
+      "Eligible for Public Trust Clearance",
+      "5+ years of software engineering experience including a proven history of building consumer web applications or services both front and backend components",
+      "5+ years of Python Development experience",
+      "2+ years of experience supporting a Federal client",
+      "Expert in Python (Django) and responsive front-end design (Bootstrap, Foundation, etc.)",
+      "Proficiency with databases Oracle, MySQL, SQL Server (MSSQL)",
+      "Bachelor's Degree is required for the role (preferably in a related field)"
+    ],
+    "NiceToHaves": [
+      "Experience working with Unix/Linux environments",
+      "Additional experience with responsive design",
+      "Strong communication skills both written and verbal",
+      "Excellent customer service and client facing skills including ability to present and interact regularly with clients"
+    ],
+    "Benefits": [
+      "Quadrant is an affirmative action/equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, status as a protected veteran, or status as an individual with a disability.",
+      "Healthcare benefits are offered to all eligible employees according to compliance mandated by the Affordable Care Act."
+    ]
+  }
+}

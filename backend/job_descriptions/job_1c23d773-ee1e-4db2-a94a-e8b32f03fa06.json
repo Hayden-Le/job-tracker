@@ -1,0 +1,31 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Collaborate with Engineering teams across GitHub to design, build, and validate secure and scalable architectures in the cloud.",
+      "Provide threat modeling and risk assessment services to characterize the risk and severity posture of various systems and components in the Cloud environment.",
+      "Develop and Deploy security guardrails through reusable patterns using standardized frameworks.",
+      "Implement information security controls and patterns that support risk assessments and the development of secure architectures.",
+      "Collect security-related operational metrics through automation and increase security visibility across the organization; measure the coverage and effectiveness of security tools; transparency over the security state of the Cloud.",
+      "Identify opportunities for process improvement, including developing and implementing internal security tools, tactics, and procedures.",
+      "Provide security-related guidance and documentation."
+    ],
+    "Requirements": [
+      "5+ years of working with cloud infrastructure",
+      "3+ years experience building or managing Cloud Platforms, Products, or Services (specifically Microsoft Azure)",
+      "3+ years experience with Python"
+    ],
+    "NiceToHaves": [
+      "Extensive experience building security solutions, ideally for cloud services",
+      "Experience with Azure Resources deployment and Azure Policy",
+      "Excellent presentation skills and experience presenting to management",
+      "Experience performing threat modeling and design reviews to assess security implications and requirements for introducing new technologies",
+      "Ability to produce concise and quality technical documentation",
+      "Strong written and verbal communication skills"
+    ],
+    "Benefits": [
+      "Minimum salary of $104,400 to maximum $276,900.",
+      "Certain roles also have the opportunity to earn sales incentives based on revenue or utilization.",
+      "In addition, certain roles are eligible for benefits and additional rewards, including annual bonus and stock."
+    ]
+  }
+}

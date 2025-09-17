@@ -1,0 +1,27 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Automating and deploying Financial Models developed using ML algorithms.",
+      "Maintaining underwriting models, credit data processing.",
+      "Deploying model configuration with market and economic data for loss mitigation models.",
+      "Providing APIs to Financial Models to integrate with IT applications.",
+      "Performance tuning and stress testing Models.",
+      "Participating in model tie outs. Identifying and resolving any issues in reconciling with model results.",
+      "Fixing software security vulnerabilities identified in SAST and FOSS scanning."
+    ],
+    "Requirements": [
+      "Bachelor's degree in computer science or relevant quantitative field.",
+      "Typically has 5 - 7 years related experience.",
+      "Programming languages: Python, JAVA, C++, SQL, Java script.",
+      "Back End Skills: Python, Pandas, Numpy, Flask, Django, Fast API.",
+      "Familiarity with microservices is required. Familiarity with cloud technologies like AWS is highly desired.",
+      "Automation Testing: Pytest, Automated Performance and Regression/Functional Testing.",
+      "DevOps Tools: Git, Gradle, Docker, Jenkins, Kubernetes, OCP, CI/CD pipeline."
+    ],
+    "NiceToHaves": [
+      "Experience in model implementation is preferred.",
+      "Experience in maintaining High Availability (HA) systems is preferred."
+    ],
+    "Benefits": ["Freddie Mac offers a comprehensive total rewards package to include competitive compensation and market-leading benefit programs."]
+  }
+}

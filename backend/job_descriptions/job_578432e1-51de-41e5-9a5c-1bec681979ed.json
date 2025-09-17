@@ -1,0 +1,31 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Build and coach a high-performing management team",
+      "Help define and communicate the long-term vision for GitHub’s code scanning and secure development offerings",
+      "Partner with product and research leadership to shape the roadmap for developer-first security",
+      "Anticipate industry trends in security and AI, positioning GitHub as a leader in developer-focused application security",
+      "Guide teams in developing technical solutions and creating comprehensive architecture and solution design documents",
+      "Drive project plans, release plans, and work items in coordination with stakeholders",
+      "Act as an expert in live service operations, developing playbooks and processes to resolve complex issues",
+      "Facilitate cross-team communications, identify dependencies, and resolve conflicts",
+      "Drive employee growth and development, manage performance, and ensure the engineering team's skills remain current"
+    ],
+    "Requirements": [
+      "9+ years' experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding",
+      "3+ years of people management experience"
+    ],
+    "NiceToHaves": [
+      "Demonstrated expertise in static application security testing (SAST)",
+      "Experience with CodeQL or similar static analysis technologies",
+      "Deep understanding of software security vulnerabilities and mitigations",
+      "Experience leading teams that deliver developer-first security products or tools embedded in CI/CD pipelines",
+      "Proven ability to scale and mentor engineering managers",
+      "Track record of driving cross-functional collaboration with product, design, research, and security partners",
+      "Strong ability to translate complex technical concepts into actionable guidance for executives and non-technical stakeholders",
+      "Prior experience building and operating high-availability, globally distributed systems in a cloud environment",
+      "Passion for developer experience"
+    ],
+    "Benefits": ["Compensation Range: The base salary range for this job is USD $127,600.00 - USD $338,500.00 /Yr.", "GitHub offers competitive pay, generous learning and growth opportunities, and excellent benefits"]
+  }
+}

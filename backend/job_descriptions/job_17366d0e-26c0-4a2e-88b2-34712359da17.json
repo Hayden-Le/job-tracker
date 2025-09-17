@@ -1,0 +1,48 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Design, build, and maintain high-performance front-end applications for 1P and 3P customers.",
+      "Develop robust, maintainable, reusable code for managing functionality, configuration, deployment, monitoring, performance, scalability, availability, security, and alerting for software test, integration, and production environments.",
+      "Plan and implement a series of steps which potentially includes reconfiguration, integration, removal, or addition of application components to enhance the application’s functionality, resiliency, usability, and security.",
+      "Understand the Business/Stakeholder/Technical requirements and assist in analyzing the existing solutions to address the needs.",
+      "Assist in creation of simple, modular, extensible functional design for the product/solution in adherence to the requirements.",
+      "Assess gaps/ updates/ modifications between the customer/business expectations and the existing product/solutions.",
+      "Analyze defects from past projects/solutions to avoid recurrence of similar defects.",
+      "Analyze system performance impacting the complete product for non-functional requirements like reliability, operability, performance efficiency and security. Troubleshoot performance and availability bottlenecks for the application.",
+      "Develop, maintain, and enhance automated test cases (adopting Shift Left practice) and deployment procedures.",
+      "Follow coding and design best practices developed by the teams and contribute towards their continuous improvement.",
+      "Plan Hardware Capacity for high traffic business Events.",
+      "Design Build and maintain Observability aspects of application.",
+      "Review Peer Code and help create a culture of continuous improvements on the architecture.",
+      "Work with relevant stakeholders on launching AB tests for different functionalities getting rolled out."
+    ],
+    "Requirements": [
+      "Experience in creating user interfaces using appropriate and relevant technologies (e.g., HTML 5 coding, CSS (Cascading Style Sheets) libraries like Bootstrap, etc.) using best practices and appropriate design patterns.",
+      "Relevant front end programming experience in relevant languages and frameworks (e.g., Java, Python, JavaScript, Spring, Node, React, Angular etc.)",
+      "Experience integrating with scalable back-end services (e.g., REST / graph-QL)",
+      "Experience in functional, integration and E2E (End 2 End) testing tools and practices.",
+      "Experience with code repositories and version control practices.",
+      "Experience with CI/CD pipelines and best practices. Automated deployment experience is a plus.",
+      "Experience in software quality and operational excellence practices.",
+      "Experience in agile development methodology.",
+      "Good analytical and problem-solving skills."
+    ],
+    "NiceToHaves": [
+      "Master’s degree in Computer Science, Computer Engineering, Computer Information Systems, Software Engineering, or related area and 1 year's experience in software engineering or related area.",
+      "We value candidates with a background in creating inclusive digital experiences, demonstrating knowledge in implementing Web Content Accessibility Guidelines (WCAG) 2.2 AA standards, assistive technologies, and integrating digital accessibility seamlessly."
+    ],
+    "Benefits": [
+      "Competitive pay",
+      "Performance-based bonus awards",
+      "Health benefits including medical, vision and dental coverage",
+      "Financial benefits including 401(k), stock purchase and company-paid life insurance",
+      "Paid time off benefits including PTO (including sick leave), parental leave, family care leave, bereavement, jury duty, and voting",
+      "Short-term and long-term disability",
+      "Company discounts",
+      "Military Leave Pay",
+      "Adoption and surrogacy expense reimbursement",
+      "Live Better U education benefit program for full-time and part-time associates in Walmart and Sam's Club facilities.",
+      "PTO and/or PPTO that can be used for vacation, sick leave, holidays, or other purposes."
+    ]
+  }
+}

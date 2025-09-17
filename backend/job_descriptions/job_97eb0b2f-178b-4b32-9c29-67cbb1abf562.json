@@ -1,0 +1,26 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Lead developers in the analysis, design, and development of new functionality.",
+      "Design, build, and deploy new features and enhancements to existing software using Java, Spring, Hibernate, and other core Java technologies.",
+      "Explore the application of new technologies via prototypes that convey capability and purpose.",
+      "Optimize application performance."
+    ],
+    "Requirements": [
+      "BS Degree in Computer Science or related field.",
+      "At least 7 years of experience in software engineering using Java/J2EE and related server side technologies.",
+      "5+ years with server side frameworks such as Spring, Hibernate, Angular, and D3.",
+      "Experience with Clearcase, SVN, Eclipse, ANT and Maven",
+      "Experience with Oracle SQL",
+      "Agile software development methodology.",
+      "Financial industry experience."
+    ],
+    "NiceToHaves": [
+      "Selenium & Cucumber",
+      "SOAP and/or REST",
+      "UNIX/LINUX scripting skills",
+      "JavaScript/jQuery/XML/HTML/CSS/Ajax coding skills"
+    ],
+    "Benefits": ["No information provided."]
+  }
+}

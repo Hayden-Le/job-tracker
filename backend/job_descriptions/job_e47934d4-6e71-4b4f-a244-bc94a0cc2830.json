@@ -1,0 +1,33 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Develop and maintain applications using C#, ASP.NET MVC, Web API, JavaScript, jQuery, Node.js, CSS, and SQL",
+      "Leverage AWS Cloud services for backend and infrastructure tasks",
+      "Automate operational tasks using scripting languages such as PowerShell, Bash, or Perl",
+      "Design, consume, and maintain RESTful APIs",
+      "Implement responsive, modern UIs using Bootstrap and Razor views",
+      "Participate in the full software development lifecycle, including design, coding, testing, and deployment",
+      "Troubleshoot and resolve technical issues across multiple systems",
+      "Collaborate with cross-functional teams including UX/UI designers, testers, and project managers",
+      "Adhere to best practices in coding standards, peer reviews, and agile development methodologies"
+    ],
+    "Requirements": [
+      "Currently possess a Public Trust Tier 2 clearance",
+      "Proven experience in web and application development using C# / ASP.NET",
+      "Strong hands-on proficiency with: o C#, ASP.NET MVC, Web API o JavaScript, jQuery, Node.js, Razor syntax o AWS, SQL, GitHub Enterprise",
+      "Experience in building responsive web interfaces using Bootstrap",
+      "Solid understanding of REST APIs and microservices architecture",
+      "Familiarity with agile development practices"
+    ],
+    "NiceToHaves": [
+      "Strong analytical thinking and problem-solving ability",
+      "Excellent communication and interpersonal skills",
+      "Ability to work independently and manage tasks proactively",
+      "Willingness to contribute ideas and improve existing systems/processes"
+    ],
+    "Benefits": [
+      "Equal Opportunity Affirmative Action employer. We prohibit discrimination in decisions concerning recruitment, hiring, compensation, benefits promotions, training, termination or any other condition of employment or career development.",
+      "Currently possess a Public Trust Tier 2 clearance" // This is listed under both Requirements and Benefits sections, but it's more appropriate to list it under Benefits as it's a benefit for the employee.
+    ]
+  }
+}

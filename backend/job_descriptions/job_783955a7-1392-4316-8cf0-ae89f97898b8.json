@@ -1,0 +1,21 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Develop, maintain, and enhance application code using C++ and C#",
+      "Perform code analysis, debugging, and resolution of software defects",
+      "Participate in peer code reviews, design reviews, and software quality assurance processes",
+      "Develop unit tests and integration tests to validate software functionality and reliability",
+      "Create and maintain technical documentation"
+    ],
+    "Requirements": [
+      "Bachelor’s degree in Computer Science, Software Engineering, or related field",
+      "3-5 years of professional experience developing software in C++ and C#",
+      "Solid understanding of object-oriented programming, design patterns, and software architecture principles"
+    ],
+    "NiceToHaves": [
+      "Familiarity with multi-threaded programming, event-driven architectures, and system resource management",
+      "Familiarity with MQTT messaging protocols for inter-process communication"
+    ],
+    "Benefits": ["No information provided."]
+  }
+}

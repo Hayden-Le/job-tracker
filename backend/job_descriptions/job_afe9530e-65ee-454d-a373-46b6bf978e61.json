@@ -1,0 +1,31 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Enabling faster execution of advanced Air Force modeling and simulation scenarios",
+      "Containerizing legacy tools",
+      "Integrating disparate model frameworks",
+      "Accelerating adjudication workflows",
+      "Injecting modern Python-driven capabilities into legacy or stovepiped systems",
+      "Enhancing interoperability, performance, and usability of existing non-Python models and applications"
+    ],
+    "Requirements": [
+      "3+ years of experience with Python",
+      "Experience in containerization, scripting, automation, and tool integration",
+      "Ability to translate non-Python codebases into Python for integration or augmentation",
+      "Ability to navigate and modify existing codebases and environments",
+      "Ability to work outside rigid Agile or Waterfall structures",
+      "Ability to work in classified or restricted-access computing environments",
+      "TS/SCI clearance",
+      "Bachelor's degree in a Computer Science field"
+    ],
+    "NiceToHaves": [
+      "Experience with modeling frameworks, such as AFSIM, NGTS, STORM, JICM, or similar DoD simulation tools"
+    ],
+    "Benefits": [
+      "Health, life, disability, financial, and retirement benefits",
+      "Paid leave, professional development, tuition assistance, work-life programs, and dependent care",
+      "Recognition awards program for exceptional performance and superior demonstration of values",
+      "Salary range: $69,400.00 to $158,000.00 (annualized USD)"
+    ]
+  }
+}

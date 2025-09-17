@@ -1,0 +1,35 @@
+ {
+  "description_sections": {
+    "Responsibilities": [
+      "Designing, developing and delivering code to meet user specifications",
+      "Creating and updating technical documentations",
+      "Attending customer meetings",
+      "Creating and maintaining Project and Sprint schedules",
+      "Developing coding standards",
+      "Assisting the team in maturing Agile processes",
+      "Creation of burndown charts",
+      "Creation of technical presentations to customer",
+      "Managing automated testing implementation",
+      "Maintaining and configuration of a Visual Studio TFS environment"
+    ],
+    "Requirements": [
+      "5 or more years of Microsoft .Net development experience using C#",
+      "Experience with AJAX, Angular JS, MVC, CSS, JQuery, Selenium",
+      "SQL Server development experience",
+      "Experience using and maintaining Visual Studio Team Foundation Server",
+      "Experience in the full life cycle of software development including design and implementation",
+      "Certified Scrum Master",
+      "Willingness to acquire an ACP"
+    ],
+    "NiceToHaves": ["No information provided"],
+    "Benefits": [
+      "Competitive compensation",
+      "Flexibility",
+      "A great benefits package that includes paid holidays, sick leave, and two weeks paid vacation during your first year of employment",
+      "Healthcare, life insurance and disability coverage",
+      "Retirement savings plan (401K)",
+      "Flexible Spending Accounts for healthcare and dependent care expenses",
+      "Subsidized transportation programs"
+    ]
+  }
+}

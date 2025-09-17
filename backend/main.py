@@ -1,16 +1,44 @@
 from fastapi.middleware.cors import CORSMiddleware
-from .db import get_session, engine
+from .db import get_session, engine, DATABASE_URL
 from pydantic import BaseModel, ConfigDict
-from sqlalchemy.ext.asyncio import AsyncSession
+from sqlalchemy.ext.asyncio import AsyncSession, create_async_engine
+from sqlalchemy import inspect, select, delete, text, or_, asc, desc, func
 from .models import JobPost
 from datetime import datetime
 from typing import Literal
-from sqlalchemy import select, delete, text, or_, asc, desc, func
 from fastapi import FastAPI, Depends, HTTPException, Query
 from uuid import UUID
-
+import os, json, pathlib
 
 app = FastAPI()
+
+@app.on_event("startup")
+async def startup_event():
+    """
+    On startup, connect to the DB and print the actual columns
+    of the job_post table to diagnose schema issues.
+    """
+    print("--- Database Schema Diagnostic ---")
+    print(f"--- Application connecting to database at URL: {DATABASE_URL} ---")
+    try:
+        # Use a separate engine for a one-off inspection
+        engine = create_async_engine(DATABASE_URL)
+        async with engine.connect() as conn:
+            def get_columns(sync_conn):
+                inspector = inspect(sync_conn)
+                return inspector.get_columns('job_post')
+
+            columns = await conn.run_sync(get_columns)
+
+            print("--- Columns found in 'job_post' table: ---")
+            column_names = [column['name'] for column in columns]
+            print(column_names)
+
+    except Exception as e:
+        print(f"Error during diagnostic: {e}")
+        print("This might mean the 'job_post' table does not exist at all.")
+    print("---------------------------------")
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:3000","http://127.0.0.1:3000", "job-tracker-one-pearl.vercel.app"],
@@ -23,6 +51,7 @@ class JobIn(BaseModel):
     source: str | None = None
     location: str | None = None
     description_snippet: str | None = None
+    description_sections: dict | None = None
     posted_at: datetime | None = None      # <-- datetime, not str
     canonical_url: str | None = None
     salary_text: str | None = None
@@ -131,3 +160,38 @@ async def dbz():
     async with engine.begin() as conn:
         val = await conn.scalar(text("SELECT 1"))
     return {"db_ok": (val == 1)}
+
+def get_job_desc_dir() -> pathlib.Path:
+    job_desc_dir = pathlib.Path(__file__).parent / "job_descriptions"
+    job_desc_dir.mkdir(exist_ok=True) # Ensure it exists
+    return job_desc_dir
+
+# List all job description JSON files and their metadata
+@app.get("/job-descriptions")
+async def list_job_descriptions(job_desc_dir: pathlib.Path = Depends(get_job_desc_dir)):
+    job_files = [f for f in os.listdir(job_desc_dir) if f.endswith(".json")]
+    jobs = []
+
+    for filename in job_files:
+        path = os.path.join(job_desc_dir, filename)
+        try:
+            with open(path, "r", encoding="utf-8") as f:
+                job = json.load(f)
+                job["filename"] = filename
+                jobs.append(job)
+        except Exception as e:
+            print(f"Error reading {filename}: {e}")
+    return jobs
+
+# Fetch a specific job description JSON file by filename
+@app.get("/job-descriptions/{filename}")
+async def get_job_description(filename: str, job_desc_dir: pathlib.Path = Depends(get_job_desc_dir)):
+    path = job_desc_dir / filename
+    if not os.path.exists(path):
+        raise HTTPException(status_code=404, detail="Job description not found")
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            job = json.load(f)
+        return job
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error reading job description: {e}")

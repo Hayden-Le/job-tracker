@@ -23,7 +23,12 @@ ssl_ctx.verify_mode = ssl.CERT_NONE
 class Base(DeclarativeBase):
     pass
 
+# Import models AFTER Base is defined to avoid circular import issues
+# This ensures models are registered with the Base.metadata
+from backend import models # noqa
+
 # ---- Async engine (PgBouncer transaction pooler safe) ----
+# Re-enabling echo to see all SQL commands
 engine = create_async_engine(
     DATABASE_URL,
     echo=True,
@@ -43,3 +48,31 @@ async_sessionmaker = AsyncSessionLocal
 async def get_session():
     async with AsyncSessionLocal() as session:
         yield session
+
+async def reset_database():
+    """Wipe and recreate all tables"""
+    from sqlalchemy import text
+    from backend.models import JobPost
+    print(f"--- Resetting database at URL: {DATABASE_URL} ---")
+    try:
+        async with engine.begin() as conn:
+            print("--- Dropping dependent table 'job_match' with CASCADE... ---")
+            await conn.execute(text("DROP TABLE IF EXISTS job_match CASCADE"))
+            
+            print("--- Dropping 'job_post' table explicitly... ---")
+            await conn.run_sync(
+                lambda sync_conn: Base.metadata.drop_all(sync_conn, tables=[JobPost.__table__], checkfirst=True)
+            )
+            print("--- Creating 'job_post' table explicitly... ---")
+            await conn.run_sync(
+                lambda sync_conn: Base.metadata.create_all(sync_conn, tables=[JobPost.__table__])
+            )
+        print("--- Database reset complete. ---")
+    except Exception as e:
+        print("--- AN ERROR OCCURRED DURING DATABASE RESET: ---")
+        print(e)
+        print("---------------------------------------------")
+
+if __name__ == "__main__":
+    import asyncio
+    asyncio.run(reset_database())
