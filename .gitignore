@@ -20,4 +20,10 @@ frontend/node_modules/
 Thumbs.db
 
 # Credentials
-credentials.json
+backend\credentials.jsonbackend/credentials.json
+token.pickle
+.env
+.env.*
+*.pem
+*.p12
+*.pickle
