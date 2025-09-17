@@ -27,3 +27,7 @@ token.pickle
 *.pem
 *.p12
 *.pickle
+backend/credentials.json
+token.pickle
+.env
+.env.*
